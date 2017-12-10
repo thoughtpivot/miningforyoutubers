@@ -1,0 +1,19 @@
+{
+  "name": "miningforyoutubers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thoughtpivot/miningforyoutubers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thoughtpivot/miningforyoutubers/issues"
+  },
+  "homepage": "https://github.com/thoughtpivot/miningforyoutubers#readme"
+}

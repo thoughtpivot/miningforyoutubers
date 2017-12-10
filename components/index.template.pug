@@ -1,0 +1,93 @@
+doctype html
+html(lang="en")
+    head
+        title Mining For YouTubers
+
+        link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons", rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Anton", rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i", rel="stylesheet")
+
+        link(href="/node_modules/vuetify/dist/vuetify.min.css", rel="stylesheet")
+
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    body
+
+        // Mining For YouTubers Application
+
+        miningforyoutubers#app
+
+            v-app(dark)
+
+                v-toolbar.red
+
+                    h1(style="color:white;font-family: 'Exo 2', sans-serif;") Mining For
+                        span(style="font-family: 'Anton', sans-serif;margin-left: 3.5px;") YouTubers
+
+                    v-spacer
+
+                v-content(fluid)
+
+                    v-container
+
+                        //v-navigation-drawer(permanent, light, :mini-variant.sync="mini")
+                            <v-toolbar flat class="transparent">
+                            <v-list class="pa-0">
+                                <v-list-tile avatar>
+                                    <v-list-tile-avatar>
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" />
+                                    </v-list-tile-avatar>
+                                <v-list-tile-content>
+                                    <v-list-tile-title>Janet Doe</v-list-tile-title>
+                                </v-list-tile-content>
+                                <v-list-tile-action>
+                                    //<v-btn icon @click.native.stop="mini = !mini">
+                                        <v-icon>chevron_left</v-icon>
+                                    //</v-btn>
+                                </v-list-tile-action>
+                                </v-list-tile>
+                            </v-list>
+                            </v-toolbar>
+                            <v-list class="pt-0" dense>
+                                <v-divider></v-divider>
+                                <v-list-tile v-for="item in items" :key="item.title" @click="">
+                                    <v-list-tile-action>
+                                        <v-icon>{{ item.icon }}</v-icon>
+                                    </v-list-tile-action>
+                                    <v-list-tile-content>
+                                        <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+                                    </v-list-tile-content>
+                                </v-list-tile>
+                            </v-list>
+
+                        v-carousel(hide-controls)
+                            //v-carousel-item(src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjh58marP7XAhWDTN8KHbSrAIQQjBwIBA&url=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2Foriginals%2F64%2F15%2F8c%2F64158c807a9f5ee14170b9b692a57986.jpg&psig=AOvVaw0PKi0UjMBJsaEuAtIPlKS8&ust=1512957431625110")
+                            v-carousel-item(src="http://static3.businessinsider.com/image/55fb37999dd7cc21008bb3d6-1190-625/the-15-most-popular-youtubers-in-the-world.jpg")
+                            v-carousel-item(src="https://s-media-cache-ak0.pinimg.com/originals/64/15/8c/64158c807a9f5ee14170b9b692a57986.jpg")
+                            v-carousel-item(src="http://newscult.com/wp-content/uploads/2016/12/youtubers.jpeg")
+                            v-carousel-item(src="https://thedowntowntea.com/wp-content/uploads/2015/11/youtubers_by_veronicazoo-d7pw4fb.jpg")
+
+
+                    //v-container
+                        v-parallax(src="/assets/1116_mybestfriendsparents_pc_5x.jpg", height="300")
+
+                        // v-layout(row wrap)
+                            v-flex(xs12 lg5)
+                                v-expansion-panel(focusable)
+
+                                    v-expansion-panel-content(v-for="(item,i) in 10", :key="i")
+                                        div(slot="header") Beautiful Tsubomi face covered in cum!
+                                        v-card
+                                            v-card-text(class="grey lighten-3")
+                                                a(href="https://www.pornhub.com/view_video.php?viewkey=1144513302") Watch on Pornhub
+
+                                    v-pagination(v-bind:length.number="15", v-model="page")
+
+                v-footer(fluid)
+
+        // Vue / Vuetify Setup
+
+        script(src="/node_modules/vue/dist/vue.js")
+        script(src="/node_modules/vuetify/dist/vuetify.js")
+        script.
+            new Vue({ el: "#app" })

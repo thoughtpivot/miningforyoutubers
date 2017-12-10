@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+    head
+        title Spanky Franky's
+
+        link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons", rel="stylesheet")
+        link(href="/node_modules/vuetify/dist/vuetify.min.css", rel="stylesheet")
+
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    body
+
+        // Spanky Franky Errors
+
+        spankyfranky#app
+
+            // Application
+
+            v-app(light)
+
+                v-toolbar.black
+
+                    img(src="/assets/mainpng.png", style="height:175px;")
+
+                    v-spacer
+
+                    v-toolbar-items.hidden-xs-only
+
+                        v-btn(style="color:white;" flat) Index
+                        v-btn(style="color:white;" flat) Search
+                        v-btn(style="color:white;" flat) About
+
+                v-content(fluid)
+
+                v-footer(fluid)
+
+        // Vue / Vuetify Setup
+
+        script(src="/node_modules/vue/dist/vue.js")
+        script(src="/node_modules/vuetify/dist/vuetify.js")
+        script.
+            new Vue({ el: "#app" })
