@@ -1,4 +1,7 @@
 node_modules
 bower_modules
+bower_packages
 .vscode
-dump*
+dump.rdb
+cache
+logs
