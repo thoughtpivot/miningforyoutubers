@@ -43,33 +43,35 @@ html(lang="en")
                             v-carousel-item(src="http://newscult.com/wp-content/uploads/2016/12/youtubers.jpeg")
                             v-carousel-item(src="https://thedowntowntea.com/wp-content/uploads/2015/11/youtubers_by_veronicazoo-d7pw4fb.jpg")
 
-                        <v-container fluid style="min-height: 0;" grid-list-lg>
+                        v-container(fluid, grid-list-lg)
                             <v-layout row wrap>
                                 <v-flex xs12>
-                                <v-card color="blue-grey darken-2" class="white--text">
-                                    <v-card-title primary-title>
-                                        <div class="headline">What's This?</div>
-                                    </v-card-title>
-                                    p Nisi enim qui laboris elit anim non excepteur deserunt laboris ullamco laborum. Magna commodo consequat tempor cillum ex. Laboris dolore sunt ut occaecat consectetur proident commodo dolore ad laborum. Cillum nisi Lorem mollit laborum nisi fugiat. Ad in ea officia eiusmod officia in laborum mollit aliqua eu incididunt.
-                                    <v-card-actions>
-                                    <v-btn flat dark>Learn More</v-btn>
-                                    </v-card-actions>
-                                </v-card>
+                                    <v-card color="blue-grey darken-2" class="white--text">
+                                        <v-card-title primary-title>
+                                            <div class="headline">What's This?</div>
+                                        </v-card-title>
+
+                                        p Nisi enim qui laboris elit anim non excepteur deserunt laboris ullamco laborum. Magna commodo consequat tempor cillum ex. Laboris dolore sunt ut occaecat consectetur proident commodo dolore ad laborum. Cillum nisi Lorem mollit laborum nisi fugiat. Ad in ea officia eiusmod officia in laborum mollit aliqua eu incididunt.
+
+                                        <v-card-actions>
+                                            <v-btn flat dark>Learn More</v-btn>
+                                        </v-card-actions>
+                                    </v-card>
                                 </v-flex>
                                 <v-flex xs12>
                                     <v-card color="cyan darken-2" class="white--text">
                                         <v-container fluid grid-list-lg>
-                                        <v-layout row>
-                                            <v-flex xs7>
-                                            <div>
-                                                <div class="headline">Investment Plans</div>
-                                                <div>Foster the People</div>
-                                            </div>
-                                            </v-flex>
-                                            <v-flex xs5>
-                                                <v-card-media src="https://thedowntowntea.com/wp-content/uploads/2015/11/youtubers_by_veronicazoo-d7pw4fb.jpg" height="125px" contain></v-card-media>
-                                            </v-flex>
-                                        </v-layout>
+                                            <v-layout row>
+                                                <v-flex xs7>
+                                                <div>
+                                                    <div class="headline">Investment Plans</div>
+                                                    <div>Foster the People</div>
+                                                </div>
+                                                </v-flex>
+                                                <v-flex xs5>
+                                                    <v-card-media src="https://thedowntowntea.com/wp-content/uploads/2015/11/youtubers_by_veronicazoo-d7pw4fb.jpg" height="125px" contain></v-card-media>
+                                                </v-flex>
+                                            </v-layout>
                                         </v-container>
                                     </v-card>
                                 </v-flex>
@@ -91,7 +93,7 @@ html(lang="en")
                                 </v-card>
                                 </v-flex>
                             </v-layout>
-                        </v-container>
+
                     v-container
 
                         h1 What's This?
